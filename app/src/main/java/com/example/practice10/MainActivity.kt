@@ -5,23 +5,22 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
-import androidx.constraintlayout.widget.ConstraintSet.Layout
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.linerlayout)
-        setTitle("LinearLayout")
+        setContentView(R.layout.tablelayout)
+        setTitle("TableLayout")
     }
 
     fun button1Click(viewOfButton1: View){
-        var button1: Button = findViewById(R.id.button1)
+        var button1: Button = findViewById(R.id.Butt1)
         var button2: Button = findViewById(R.id.button2)
         button1.visibility = View.INVISIBLE
         button2.visibility = View.VISIBLE
     }
     fun button2Click(viewOfButton2: View){
-        var button1: Button = findViewById(R.id.button1)
+        var button1: Button = findViewById(R.id.Butt1)
         var button2: Button = findViewById(R.id.button2)
         button1.visibility = View.VISIBLE
         button2.visibility = View.INVISIBLE
